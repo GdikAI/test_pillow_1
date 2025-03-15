@@ -47,8 +47,10 @@ def process_images_in_folder(source_folder, target_folder):
 
         process_image(source_file_path, target_folder)
 
-# Пример использования
-source_directory = r"C:\Users\Владислав\PycharmProjects\test_pillow_1\in"
-target_directory = r"C:\Users\Владислав\PycharmProjects\test_pillow_1\out"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Определяем пути к папкам относительно базового пути
+source_directory = os.path.join(base_dir, "in")
+target_directory = os.path.join(base_dir, "out")
 
 process_images_in_folder(source_directory, target_directory)
