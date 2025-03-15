@@ -20,7 +20,7 @@ def process_image(file_path, target_folder):
 
     # Увеличение контраста
     enhancer = ImageEnhance.Contrast(grayscale)
-    factor = 0.75  # Множитель контраста
+    factor = 0.55  # Множитель контраста
     image_output = enhancer.enhance(factor)
 
     # Получение имени файла и формирование пути для сохранения
